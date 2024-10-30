@@ -24,3 +24,5 @@ type RemoveFunc<T> = {
 };
 
 type removedFUn = RemoveFunc<obj>;
+
+

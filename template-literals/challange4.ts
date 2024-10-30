@@ -1,4 +1,4 @@
-type SnakeToCamelCase<T extends string> =
+export type SnakeToCamelCase<T extends string> =
   T extends `${infer First}_${infer Second}`
     ? SnakeToCamelCase<`${First}${Capitalize<Lowercase<Second>>}`>
     : T;

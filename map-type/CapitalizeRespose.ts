@@ -4,7 +4,7 @@ type apiResponse = {
   value_fuck_it: string | number | boolean | Record<string, any>
 };
 
-type CamelCase<T> = T extends `${infer First}_${infer Second}`
+export type CamelCase<T> = T extends `${infer First}_${infer Second}`
   ? `${First}${Capitalize<CamelCase<Second>>}`
   : T;
 
